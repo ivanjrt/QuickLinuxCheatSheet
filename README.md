@@ -176,9 +176,35 @@ sudo apt install traceroute
 ping -c 3 google.com
 ```
 
+# Show Programs using the network
+```
+netstat -nutlp
+```
+
 # Download a file
 ```
-wget http://domain.com/archive
+wget https://gdlp01.c-wss.com/gds/0/0300004730/02/eosrt3-eos1100d-im2-c-en.pdf
 ```
+
+# ZIP a file
+Prerequisites:
+```
+sudo apt install zip unzip
+```
+name of the file that will be, then the actual filename, Example: </br>
+```
+zip eosrt3-eos1100d-im2-c-en.zip  eosrt3-eos1100d-im2-c-en.pdf
+```
+#Top Zip many Files & Folders
+```
+zip -r Manuals.zip eosrt3-eos1100d-im2-c-en.pdf folderWfiles
+```
+
+# Send Files
+```
+scp file.pkg remote_username@10.10.0.2:/remote/directory
+```
+
+
 
 
