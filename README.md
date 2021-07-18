@@ -175,3 +175,10 @@ sudo apt install traceroute
 ```
 ping -c 3 google.com
 ```
+
+# Download a file
+```
+wget http://domain.com/archive
+```
+
+
