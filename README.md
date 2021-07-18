@@ -17,4 +17,7 @@ afterwards
 # Update Pi-Hole
 ``` pihole -up ```
 
-
+# SSH
+```ssh username@IpAddress```
+**yes** </br>
+then type in the _password_ for the host </br>
