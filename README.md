@@ -24,10 +24,48 @@ or
 ```
 df -h --total | sed '4!d
 ```
+# last reboots
+```
+last reboot
+```
+
+
+
+# Dates
+```
+cal
+```
+or with current Time
+```
+date
+```
+
+# Whos is logged In
+```
+w
+```
+or current 
+```
+whoami
+```
 
 # Find Out how Memory Dets
 ```
 vmstat -s
+```
+or
+```
+free -h
+```
+
+# CPU Being Used
+```
+cat /proc/cpuinfo
+```
+
+# Current IP
+```
+hostname -I
 ```
 
 # Interfaces Devices
