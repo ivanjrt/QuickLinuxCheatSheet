@@ -1,8 +1,8 @@
 # Computername and other info
 ```hostnamectl```
 
-# Name of the type of Drive being used
-dmesg| grep sd
+# Name of the type of Drive(s) being used
+``` dmesg| grep sd ```
 
 # if Debian for how much space on HDD(s), even USB,  (on the for line will tel you the Mount Drive name)
 ``` df -h --total ```
