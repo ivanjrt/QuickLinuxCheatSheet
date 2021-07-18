@@ -14,11 +14,15 @@ or
 # Find Out how Memory Dets
 ```vmstat -s```
 
-# Ethernet Devices
+# Interfaces Devices
 ``` ip link show ``` 
 OR
 ``` nmcli device status ```
+OR
+``` /sbin/ifconfig -a ```
 
+# Router Table
+``` ip r ```
 
 
 # DEB, check for Updates/Upgrades
