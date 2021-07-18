@@ -186,18 +186,44 @@ netstat -nutlp
 wget https://gdlp01.c-wss.com/gds/0/0300004730/02/eosrt3-eos1100d-im2-c-en.pdf
 ```
 
+
+# TAR (Compression) - _tar -czvf name_of_file_to_be.tar.gz_ then the actual file
+```
+tar -czvf eosManual.tar.gz eosrt3-eos1100d-im2-c-en.pdf
+```
+Multiple folders & Files
+```
+tar -czvf file.tar.gz /home/user1/ /home/user2/
+```
+you can also exclude a folder ie. 
+```
+tar -czvf archive.tar.gz /home/user1 --exclude=*.mp3
+```
+To Extract file in same directory
+```
+tar -xzvf eosManual.tar.gz
+```
+To Extract file in different directory
+```
+tar -xzvf eosManual.tar.gz -C folder2/
+```
+
 # ZIP a file
 Prerequisites:
 ```
 sudo apt install zip unzip
 ```
-name of the file that will be, then the actual filename, Example: </br>
+Name of the file that will be, then the actual filename, Example: </br>
 ```
 zip eosrt3-eos1100d-im2-c-en.zip  eosrt3-eos1100d-im2-c-en.pdf
 ```
-#Top Zip many Files & Folders
+To Zip many Files & Folders
 ```
 zip -r Manuals.zip eosrt3-eos1100d-im2-c-en.pdf folderWfiles
+```
+To Unzip
+```
+unzip Manuals.zip
 ```
 
 # Send Files
@@ -205,6 +231,9 @@ zip -r Manuals.zip eosrt3-eos1100d-im2-c-en.pdf folderWfiles
 scp file.pkg remote_username@10.10.0.2:/remote/directory
 ```
 
-
+# Remove Folders  (for a single file don't use the '_rf_')
+ ```
+ rm -rf folderWfiles/
+ ```
 
 
