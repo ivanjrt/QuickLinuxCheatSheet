@@ -41,7 +41,14 @@ afterwards
 **yes** </br>
 then type in the _password_ for the host </br>
 
-
+# Restart
 ```systemctl reboot -i```
+
+# TracerRoute for Ubuntu
+``` RUBY
+sudo apt install inetutils-traceroute
+sudo apt install traceroute
+```
+
 
 
