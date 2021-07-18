@@ -2,6 +2,10 @@
 ```
 hostnamectl
 ```
+# Linux Installed OS version
+```
+lsb_release -a
+```
 
 # Name of the type of Drive(s) being used
 ``` 
