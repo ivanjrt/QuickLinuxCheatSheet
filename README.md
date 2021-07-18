@@ -1,54 +1,87 @@
 # Computername and other info
-```hostnamectl```
+```
+hostnamectl
+```
 
 # Name of the type of Drive(s) being used
-``` dmesg| grep sd ```
+``` 
+dmesg| grep sd
+```
 
 # if Debian for how much space on HDD(s), even USB,  (on the for line will tel you the Mount Drive name)
-``` df -h --total ```
+``` 
+df -h --total 
+```
 or
-```df -h --total | grep total```
+```
+df -h --total | grep total
+```
 or
-```df -h --total | sed '4!d'```
+```
+df -h --total | sed '4!d
+```
 
 # Find Out how Memory Dets
-```vmstat -s```
+```
+vmstat -s
+```
 
 # Interfaces Devices
-``` ip link show ``` 
+```
+ip link show
+``` 
 OR
-``` nmcli device status ```
+```
+nmcli device status
+```
 OR
-``` /sbin/ifconfig -a ```
+```
+/sbin/ifconfig -a
+```
 
 # Router Table
-``` ip r ```
-
+```
+ip r
+```
 
 # DEB, check for Updates/Upgrades
-``` sudo apt update && sudo apt upgrade -y ``` 
+```
+sudo apt update && sudo apt upgrade -y
+``` 
 afterwards
-``` sudo apt autoremove ```
+```
+sudo apt autoremove
+```
 
 # Check Version for Pi-Hole
-``` pihole -v ```
+```
+pihole -v
+```
 
 # Update Pi-Hole
-``` pihole -up ```
+```
+pihole -up
+```
 
 # SSH
-```ssh username@IpAddress```
+```
+ssh username@IpAddress
+```
 **yes** </br>
 then type in the _password_ for the host </br>
 
 # Restart
-```systemctl reboot -i```
+```
+systemctl reboot -i
+```
 
 # TracerRoute for Ubuntu
-``` RUBY
+```RUBY
 sudo apt install inetutils-traceroute
 sudo apt install traceroute
 ```
 
-
-
+# Ping for a count of 3
+```
+ping -c 3 google.com
+```
