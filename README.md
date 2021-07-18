@@ -29,12 +29,11 @@ df -h --total | sed '4!d
 last reboot
 ```
 
-
-
 # Dates
 ```
 cal
 ```
+
 or with current Time
 ```
 date
@@ -48,6 +47,12 @@ or current
 ```
 whoami
 ```
+
+# Running Processes
+```
+ps
+```
+
 
 # Find Out how Memory Dets
 ```
@@ -63,7 +68,7 @@ free -h
 cat /proc/cpuinfo
 ```
 
-# Current IP
+# Current 
 ```
 hostname -I
 ```
@@ -81,11 +86,6 @@ OR
 /sbin/ifconfig -a
 ```
 
-# Router Table
-```
-ip r
-```
-
 # DEB, check for Updates/Upgrades
 ```
 sudo apt update && sudo apt upgrade -y
@@ -99,10 +99,58 @@ sudo apt autoremove
 ```
 pihole -v
 ```
+# Display specific lines from a file
+```
+tail -3 /var/log/cups/access_log
+```
+
+# Display the User's Group
+```
+id
+```
+
+# Create a new user and his Home DIR
+```
+useradd -c "John Doe" -m john
+```
+# Delete the user
+```
+userdel john
+```
+#Add the User to a group
+```
+usermod -aG sales john
+```
+
+# Create a shortcut
+```
+ln -s /path/to/file linkname
+```
+
+# Create an Empty File
+```
+touch fileName
+```
+
+#Read a txt file
+```
+less file
+```
+#First 10 Lines
+``` 
+
+# Rename file
+```
+mv fileA fileB
+```
 
 # Update Pi-Hole
 ```
 pihole -up
+```
+# Router Table
+```
+ip r
 ```
 
 # SSH
