@@ -181,6 +181,16 @@ ping -c 3 google.com
 netstat -nutlp
 ```
 
+# Renew or Release IP
+Deb
+```
+systemctl restart network.service
+```
+or RPMs
+```
+systemctl restart networking.service	
+```
+
 # Download a file
 ```
 wget https://gdlp01.c-wss.com/gds/0/0300004730/02/eosrt3-eos1100d-im2-c-en.pdf
