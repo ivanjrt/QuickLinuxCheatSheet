@@ -168,6 +168,12 @@ Check for status </br>
 sudo service ssh status
 ```
 
+# Static IP Address
+GUI Method
+![image](https://user-images.githubusercontent.com/44326428/128663929-34a42601-7c0f-4e9e-b503-4558dc3bbf2f.png)
+
+
+
 # Restart
 ```
 systemctl reboot -i
