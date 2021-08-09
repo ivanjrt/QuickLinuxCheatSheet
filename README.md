@@ -152,6 +152,9 @@ pihole -up
 ```
 ip r
 ```
+# Internet Gateway
+```
+ip r | grep ^def
 
 # SSH
 ```
