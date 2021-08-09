@@ -163,6 +163,11 @@ ssh username@IpAddress
 **yes** </br>
 then type in the _password_ for the host </br>
 
+Check for status </br>
+```
+sudo service ssh status
+```
+
 # Restart
 ```
 systemctl reboot -i
