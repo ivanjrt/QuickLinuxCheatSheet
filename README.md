@@ -2,6 +2,12 @@
 ```
 hostnamectl
 ```
+# To chance computer name
+```
+hostnamectl set-hostname {name-here}
+vi /etc/hosts #Replace the old name for the new one here
+```
+
 # Linux Installed OS version
 ```
 lsb_release -a
