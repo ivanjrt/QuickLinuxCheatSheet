@@ -265,5 +265,53 @@ scp file.pkg remote_username@10.10.0.2:/remote/directory
  ```
  rm -rf folderWfiles/
  ```
+ 
+ 
+ # Creating a script
+ ```
+ nano Downloads/runner.sh
+ ```
+ 
+Content of a simple script: </br>
+``` Java
+#!/bin/bash
+echo "Computer Name: "  $(hostname) > Downloads/filelist.txt
+echo " "
+ls                                 >> Downloads/filelist.txt
+echo "Today's Date: "  $(date)     >> Downloads/filelist.txt
+```
+
+Making it Executable </br>
+```
+sudo chmod 774 Downloads/runner.sh
+```
+Execution: ```./Downloads/runner.sh```
+
+
+ # Deploying a script (only works from another Linux)
+    1 Method 1: Via Line by Line:
+    ```java
+    ssh useradmin@10.10.10.10 'bash -s' <<'ENDSCRIPT'
+    echo "Computer Name: "  $(hostname) > Downloads/filelist.txt
+    echo " "
+    ls                                 >> Downloads/filelist.txt
+    echo "Today's Date: "  $(date)     >> Downloads/filelist.txt
+    ENDSCRIPT
+    ```
+ ```   
+    
+    2 Method 2: Via a script written in local:
+    ssh rosivan@10.10.10.117 'bash -s' < runner.sh
+    ```
+  
+
+
+
+
+  
+ 
+ 
+ 
+ 
 
 
