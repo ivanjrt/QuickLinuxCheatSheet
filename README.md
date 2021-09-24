@@ -289,7 +289,7 @@ Execution: ```./Downloads/runner.sh```
 
 
  # Deploying a script (only works from another Linux)
-    1 Method 1: Via Line by Line:
+ * Method 1: Via Line by Line:
     ```java
     ssh useradmin@10.10.10.10 'bash -s' <<'ENDSCRIPT'
     echo "Computer Name: "  $(hostname) > Downloads/filelist.txt
@@ -298,20 +298,7 @@ Execution: ```./Downloads/runner.sh```
     echo "Today's Date: "  $(date)     >> Downloads/filelist.txt
     ENDSCRIPT
     ```
- ```   
-    
-    2 Method 2: Via a script written in local:
-    ssh rosivan@10.10.10.117 'bash -s' < runner.sh
+* Method 2: Via a script written in local:
     ```
-  
-
-
-
-
-  
- 
- 
- 
- 
-
-
+    ssh useradmin@10.10.10.10 'bash -s' < runner.sh
+    ```
