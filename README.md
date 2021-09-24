@@ -302,3 +302,29 @@ Execution: ```./Downloads/runner.sh```
     ```
     ssh useradmin@10.10.10.10 'bash -s' < runner.sh
     ```
+    
+# Maniuplating Text: 
+quotes.txt 
+```Javascript
+The present is theirs; the future, for which I really worked, is mine.
+Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.
+The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence
+
+-Nikola Tesla
+```
+Picking and Highlighting specific word(s): 
+```
+grep "virtues" quotes.txt
+```
+Picking and Highlighting specific word(s), while guessing char(s)
+```
+grep "virt[a-z][a-z]" quotes.txt
+```
+Replacing specific word(s)
+```
+sed -i 's/I really worked/I really did not worked/g' quotes.txt
+```
+
+
+    
+
