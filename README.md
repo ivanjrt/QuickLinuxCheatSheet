@@ -325,6 +325,61 @@ Replacing specific word(s)
 sed -i 's/I really worked/I really did not worked/g' quotes.txt
 ```
 
+Toast Notification
+```
+#!/bin/bash
+sleep 10
+notify-send "notify.sh" "Task complete successfully"
+```
+
+# Multitasking
+``` Java
+#!/bin/bash
+function task1() {
+    echo "Running task1..."
+    sleep 5
+}
+function task2() {
+    echo "Running task2..."
+    sleep 5
+}
+task1 &
+task2 &
+wait
+echo "All done!"
+```
+
+Text Styles
+``` Java
+#!/bin/bash
+bold=$(tput bold)
+underline=$(tput smul)
+italic=$(tput sitm)
+info=$(tput setaf 2)
+error=$(tput setaf 160)
+warn=$(tput setaf 214)
+reset=$(tput sgr0)
+echo "${info}INFO${reset}: This is an ${bold}info${reset} message"
+echo "${error}ERROR${reset}: This is an ${underline}error${reset} message"
+echo "${warn}WARN${reset}: This is a ${italic}warning${reset} message"
+```
+
+# For Loops
+While Loop
+``` javascript
+#!/bin/bash
+while true;
+do
+    # Frame #1
+    printf "\r< Loading..." 
+    sleep 0.5
+    # Frame #2 
+    printf "\r> Loading..." 
+    sleep 0.5 
+done
+```
+
+
 
     
 
