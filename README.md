@@ -331,6 +331,20 @@ Toast Notification
 sleep 10
 notify-send "notify.sh" "Task complete successfully"
 ```
+Text Styles
+``` Java
+#!/bin/bash
+bold=$(tput bold)
+underline=$(tput smul)
+italic=$(tput sitm)
+info=$(tput setaf 2)
+error=$(tput setaf 160)
+warn=$(tput setaf 214)
+reset=$(tput sgr0)
+echo "${info}INFO${reset}: This is an ${bold}info${reset} message"
+echo "${error}ERROR${reset}: This is an ${underline}error${reset} message"
+echo "${warn}WARN${reset}: This is a ${italic}warning${reset} message"
+```
 
 # Multitasking
 ``` Java
@@ -347,21 +361,6 @@ task1 &
 task2 &
 wait
 echo "All done!"
-```
-
-Text Styles
-``` Java
-#!/bin/bash
-bold=$(tput bold)
-underline=$(tput smul)
-italic=$(tput sitm)
-info=$(tput setaf 2)
-error=$(tput setaf 160)
-warn=$(tput setaf 214)
-reset=$(tput sgr0)
-echo "${info}INFO${reset}: This is an ${bold}info${reset} message"
-echo "${error}ERROR${reset}: This is an ${underline}error${reset} message"
-echo "${warn}WARN${reset}: This is a ${italic}warning${reset} message"
 ```
 
 # For Loops
