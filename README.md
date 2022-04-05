@@ -158,13 +158,11 @@ touch fileName
 ```
 less file
 ```
-#First 10 Lines
-``` 
-# History of Commands
+
+# History
 ```
 history
 ```
-
 
 # Rename file
 ```
