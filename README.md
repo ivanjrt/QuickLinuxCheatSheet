@@ -13,6 +13,11 @@ vi /etc/hosts #Replace the old name for the new one here
 lsb_release -a
 ```
 
+# Overview Configuration
+```
+sudo -i
+```
+
 # Name of the type of Drive(s) being used
 ``` 
 dmesg| grep sd
