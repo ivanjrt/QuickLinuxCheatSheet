@@ -138,6 +138,17 @@ usermod -aG sales john
 ln -s /path/to/file linkname
 ```
 
+# Locating files
+```
+apt install mlocate
+locate file.txt
+```
+
+# Location Path
+```
+pstree
+```
+
 # Create an Empty File
 ```
 touch fileName
@@ -149,6 +160,11 @@ less file
 ```
 #First 10 Lines
 ``` 
+# History of Commands
+```
+history
+```
+
 
 # Rename file
 ```
@@ -182,7 +198,6 @@ sudo service ssh status
 # Static IP Address
 GUI Method
 ![image](https://user-images.githubusercontent.com/44326428/128663929-34a42601-7c0f-4e9e-b503-4558dc3bbf2f.png)
-
 
 
 # Restart
