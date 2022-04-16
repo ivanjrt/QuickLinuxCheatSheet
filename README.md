@@ -8,6 +8,51 @@ hostnamectl set-hostname {name-here}
 vi /etc/hosts #Replace the old name for the new one here
 ```
 
+# Computer Uptime
+```
+uptime
+```
+
+# CPU Info
+```
+lscpu
+```
+
+# Task Manager
+```
+apt install htop
+htop
+```
+
+# List PCI Network Devices
+```
+lspci  
+# Look between those lines for the NIC. vm = Intel Corporation 82xxxx
+```
+
+# Full System Info
+```
+sudo lshw
+lsshow -html > systeminfo.html
+```
+
+# Start/Stop/Restart a Service
+```
+systemctl start service name
+systemctl stop service name
+systemctl restart service name
+```
+
+# Mute Volume
+```
+amixer set Master muteclear
+```
+
+
+
+
+
+
 # Linux Installed OS version
 ```
 lsb_release -a
