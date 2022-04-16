@@ -48,11 +48,6 @@ systemctl restart service name
 amixer set Master muteclear
 ```
 
-
-
-
-
-
 # Linux Installed OS version
 ```
 lsb_release -a
@@ -285,6 +280,25 @@ ls -all folder
 ```
 <br/> 8 Permissions: r=Read ; w=Write ; x=Execute <br/>
  
+# Find file which sizes are between 5-10MB
+```
+sudo  find / -size +5M -size -10M
+```
+
+# Find all files which are accessed N days back
+```
+find / -atime 2
+```
+# Find modifies files in the last N minutes
+```
+find / -mmin -1
+```
+# JSON Utility
+```
+sudo apt install jshon -y
+echo '{"name": "Kesk","surname":"norem"}' | jshon
+echo '{"name": "Kesk","surname":"norem"}' | jshon > file.json
+```
 
 # TAR (Compression) - _tar -czvf name_of_file_to_be.tar.gz_ then the actual file
 ```
@@ -392,6 +406,10 @@ grep "virt[a-z][a-z]" quotes.txt
 Replacing specific word(s)
 ```
 sed -i 's/I really worked/I really did not worked/g' quotes.txt
+```
+Convert Lower Case
+```
+sed -e 's/\(.*\)/\L\1/' hello.txt > output.txt
 ```
 
 Toast Notification
