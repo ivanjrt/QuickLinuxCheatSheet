@@ -43,6 +43,25 @@ systemctl stop service name
 systemctl restart service name
 ```
 
+# Kill a Process
+* Identify the process of the App  ``` top ``` </br>
+* Find the PID: via TOP   </br>
+![image](https://user-images.githubusercontent.com/44326428/165007947-d8dfcc01-ea5b-423f-8a8c-c54137854bdf.png)<br/>
+then 
+```
+killall 9
+``` 
+where the next number is the PID, to close </br>
+ </br> or  <br/>
+ *  Find the PID: via ```ps -ef | grep appname ```  </br>
+ * ![image](https://user-images.githubusercontent.com/44326428/165008506-35b03cdb-4bef-48b1-b100-8a084431e9a8.png)
+```
+kill 9
+```
+ </br> or  <br/>
+ * If using GUI, then ``` xkill ``` then click over the app to close  </br>
+ 
+ 
 # Mute Volume
 ```
 amixer set Master muteclear
