@@ -81,8 +81,15 @@ sudo -i
 ``` 
 dmesg| grep sd
 ```
-
-# if Debian for how much space on HDD(s), even USB,  (on the for line will tel you the Mount Drive name)
+# Check to see for Mounted Drives
+```
+mount
+```
+to Reload Mounts
+```
+sudo mount -a
+```
+# if Debian for how much space on HDD(s), even USB,  (on the for line will tell you the Mount Drive name)
 ``` 
 df -h --total 
 ```
