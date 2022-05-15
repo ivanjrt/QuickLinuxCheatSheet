@@ -491,7 +491,33 @@ do
 done
 ```
 
+# Directory Folders Content
 
+<p>
 
-    
-
+     ```Ruby
+| Folder  | Content |
+| ------------- | ------------- |
+| /.                   | Root Directory for every directory. Read/Write Only unlesss Sudo access |
+| /                    | Everything on your Linux system is located under the / directory |
+| /bin -> /usr/bin     | Contains the essential user binaries (programs) that must be present when the system is mounted in single-user mode  |
+| /boot                | The startup files and the kernel, vmlinuz. In some recent distributions also grub data. Grub is the GRand Unified Boot loader and is an attempt to  get rid of the many different boot-loaders we know today.  | 
+|/dev                  | directory contains a number of special files that represent devices. These are not actual files as we know them, but they appear as files — for example, /dev/sda represents the first SATA drive in the system. If you wanted to partition it, you could start a partition editor and tell it to edit /dev/sda, /dev/random produces random numbers.|
+| /etc                 | Most important system configuration files are in /etc, this directory contains data similar to those in the Control Panel in Windows  |
+| /home                | Home directories of the common users.  |
+| /lib -> /usr/lib     | The /lib directory contains libraries needed by the essential binaries in the /bin and /sbin folder. Libraries needed by the binaries in the /usr/bin folder are located in /usr/lib  |
+| /lib64 -> /usr/lib64 | Directory containing 64-bit system libraries. |
+| /media               |  contains subdirectories where removable media devices inserted into the computer are mounted  |
+| /mnt                 |  Directory used for temporarily mounting remote filesystems and other media  |
+| /opt                 |  contains subdirectories for optional software packages  |
+| /proc                |  /proc directory similar to the /dev directory because it doesn’t contain standard files. It contains special files that represent system and process information    |
+| /root                |  The root user's home directory.  |
+| /run                 |  A runtime scratch directory (RAM-based).|
+| /sbin -> /usr/sbin   |  The /sbin directory is similar to the /bin directory. It contains essential binaries that are generally intended to be run by the root user for system administration  |
+| /selinux             |  If your Linux distribution uses SELinux for security (Fedora and Red Hat, for example), the /selinux directory contains special files used by SELinux. It’s similar to /proc. Ubuntu doesn’t use SELinux, so the presence of this folder on Ubuntu appears to be a bug  |
+| /srv                 |  Contains “data for services provided by the system.” If you were using the Apache HTTP server to serve a website, you’d likely store your website’s files in a directory inside the /srv directory  |
+| /sys                 |  Directory containing devices, kernel modules, filesystems, and other kernel component info  |
+| /tmp                 |  	Temporary space for use by the system, cleaned upon reboot|
+| /usr                 |  	Programs, libraries, documentation etc. for all user-related programs.|
+| /var                 |  Variable data files are stored here. This can include things like log files, MySQL, and other database files, web server data files, email inboxes, and much more.  |
+```
