@@ -302,6 +302,7 @@ wget https://gdlp01.c-wss.com/gds/0/0300004730/02/eosrt3-eos1100d-im2-c-en.pdf
 # File / Folder properties
 ```
 ls -all file.txt
+ls -lh file.txt
 ls -all folder
 ```
 <br/> 8 Permissions: r=Read ; w=Write ; x=Execute <br/>
