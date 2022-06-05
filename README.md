@@ -263,7 +263,6 @@ sudo service ssh status
 GUI Method
 ![image](https://user-images.githubusercontent.com/44326428/128663929-34a42601-7c0f-4e9e-b503-4558dc3bbf2f.png)
 
-
 # Restart
 ```
 systemctl reboot -i
@@ -294,6 +293,12 @@ or RPMs
 ```
 systemctl restart networking.service	
 ```
+
+# Get an IP from a DNS
+```
+dig google.com
+```
+
 
 # Download a file
 ```
