@@ -105,6 +105,7 @@ or a better view with JSON output
 ```
 wget https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb
 dpkg -i duf_0.6.0_linux_amd64.deb
+duf
 ```
 
 # last reboots
