@@ -101,6 +101,12 @@ or
 ```
 df -h --total | sed '4!d
 ```
+or a better view with JSON output
+```
+wget https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb
+dpkg -i duf_0.6.0_linux_amd64.deb
+```
+
 # last reboots
 ```
 last reboot
