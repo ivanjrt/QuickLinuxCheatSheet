@@ -19,11 +19,16 @@ lscpu
 ```
 
 # Task Manager
+Deb Version
 ```
-apt install htop
-htop
+wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
+sudo dpkg -i gotop_3.0.0_linux_amd64.deb
 ```
-
+or RPM Version
+```
+wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.rpm
+sudo rpm -ivh gotop_3.0.0_linux_amd64.rpm
+```
 # List PCI Network Devices
 ```
 lspci  
