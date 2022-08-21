@@ -532,6 +532,14 @@ done
 chmod +x looper.sh <br/>
 ./looper.sh
 
+# File Exist
+```
+if [[ -f file ]]; then echo "exits"; else echo "doesn't exit"; fi
+```
+# Folder Exist
+```
+if [[ -d folder ]]; then echo "exits"; else echo "doesn't exit"; fi
+```
 
 # Directory Folders Content
 
