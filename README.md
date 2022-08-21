@@ -529,7 +529,7 @@ do
   echo "Thi is line: " $i
 done
 ```
-chmod +x looper.sh
+chmod +x looper.sh <br/>
 ./looper.sh
 
 
