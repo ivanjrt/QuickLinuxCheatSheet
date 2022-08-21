@@ -514,6 +514,25 @@ do
 done
 ```
 
+
+# Loops
+Example 1
+```
+for i in 3 43 44 11 9; do echo $i; done
+```
+
+Example 2
+```
+#!/bin/bash
+for i in {1..10}
+do
+  echo "Thi is line: " $i
+done
+```
+chmod +x looper.sh
+./looper.sh
+
+
 # Directory Folders Content
 
 <p>
