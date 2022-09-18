@@ -571,3 +571,6 @@ if [[ -d folder ]]; then echo "exits"; else echo "doesn't exit"; fi
 | /usr                 |  	Programs, libraries, documentation etc. for all user-related programs.|
 | /var                 |  Variable data files are stored here. This can include things like log files, MySQL, and other database files, web server data files, email inboxes, and much more.  |
 ```
+
+# At the Scripting level
+https://devhints.io/bash
