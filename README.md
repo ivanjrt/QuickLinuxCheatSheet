@@ -167,6 +167,16 @@ cat /proc/cpuinfo
 hostname -I
 ```
 
+# Ports using specific Ports
+```
+sudo lsof -P -i:631
+```
+
+# List all the porta that are active with what peer
+```
+sudo ss -tulwnp
+```
+
 # Interfaces Devices
 ```
 ip link show
