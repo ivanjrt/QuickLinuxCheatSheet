@@ -241,6 +241,10 @@ locate file.txt
 ```
 pstree
 ```
+# Change Prompt
+```
+PS1="[ ${debian_chroot:+($debian_chroot)}\u is awesome: \w ]\\$ "
+```
 
 # Create an Empty File
 ```
