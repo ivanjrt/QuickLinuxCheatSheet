@@ -215,6 +215,11 @@ OR
 /sbin/ifconfig -a
 ```
 
+# Check for all the MAC address your device around the network, try to ping the device if stil doesn't show up
+```
+arp -a
+```
+
 # DEB, check for Updates/Upgrades
 ```
 sudo apt update && sudo apt upgrade -y
