@@ -215,8 +215,10 @@ OR
 /sbin/ifconfig -a
 ```
 
-# Check for all the MAC address your device around the network, try to ping the device if stil doesn't show up
+# Check for all the MAC address your device around the network, try to ping the device if stil doesn't show up <br/>
+It works better on Windows
 ```
+sudo apt install net-toolsc
 arp -a
 ```
 
