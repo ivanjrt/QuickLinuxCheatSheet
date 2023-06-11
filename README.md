@@ -221,6 +221,11 @@ It works better on Windows
 sudo apt install net-toolsc
 arp -a
 ```
+# Renew an IP address
+```
+sudo dhclient -r
+sudo dhclient
+```
 
 # DEB, check for Updates/Upgrades
 ```
