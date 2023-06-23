@@ -44,6 +44,7 @@ lsshow -html > systeminfo.html
 # Start/Stop/Restart a Service
 ```
 systemctl list-unit-files --type service -all
+systemctl list-unit-files --no-pager
 systemctl | grep running
 systemctl start service name
 systemctl stop service name
