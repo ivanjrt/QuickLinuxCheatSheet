@@ -592,7 +592,14 @@ if [[ -f file ]]; then echo "exits"; else echo "doesn't exit"; fi
 ```
 if [[ -d folder ]]; then echo "exits"; else echo "doesn't exit"; fi
 ```
-
+# Fix Ubuntu partitions, showing small size:
+```
+sudo lvextend --resizefs -l +100%FREE ubuntu-vg/ubuntu-lv
+```
+# Intalling NALA , GUI replacement for `apt`
+```
+sudo apt install nala
+```
 # Directory Folders Content
 
 <p>
