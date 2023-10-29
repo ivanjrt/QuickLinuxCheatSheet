@@ -629,7 +629,13 @@ sudo apt install nala
 | /tmp                 |  	Temporary space for use by the system, cleaned upon reboot|
 | /usr                 |  	Programs, libraries, documentation etc. for all user-related programs.|
 | /var                 |  Variable data files are stored here. This can include things like log files, MySQL, and other database files, web server data files, email inboxes, and much more.  |
-```
 
 # At the Scripting level
 https://devhints.io/bash
+
+# In case of error such repos cannot be found:
+ie. _The repository 'http://archive.ubuntu.com/ubuntu kinetic Release' no longer has a Release file._ <br/>
+`sudo nano /etc/apt/sources.list` and add "old-", to the hyperlinks shown there. something like:  <br/>
+http://old-releases.ubuntu.com <br/>
+then save the file and do  `do-release-upgrade` this will revamp the next possible version and then run the progress
+
