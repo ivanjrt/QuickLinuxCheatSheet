@@ -1,3 +1,14 @@
+# Remote GUI from Ubuntu
+```
+sudo apt purge ubuntu-desktop
+sudo systemctl disable --now gdm
+systemctl set-default multi-user.target
+```
+To enable the GUI again:
+```
+systemctl set-default graphical.target
+```
+
 # Computername and other info
 ```
 hostnamectl
