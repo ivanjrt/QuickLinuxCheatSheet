@@ -374,6 +374,30 @@ or RPMs
 systemctl restart networking.service	
 ```
 
+# Assign a Static IPv4 Address.
+Back up your current network configuration: 
+```
+sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+```
+Find your Interface with `ip a` in this case is `enp0s3` but it could be `epns08`...
+then adjust the code below <br/>
+```
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses: [192.168.1.2/24]
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+```
+save it with : `press Ctrl + X` while you could refresh it with `sudo netplan apply` is recommended to just restart hence you might be connected via SSH anyways<br/>
+
+
+
+
 # Get an IP from a DNS
 ```
 dig google.com
