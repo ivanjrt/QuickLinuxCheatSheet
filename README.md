@@ -669,8 +669,28 @@ sudo apt install nala
 https://devhints.io/bash
 
 # In case of error such repos cannot be found:
+# Resolution 1 (Prefered to test first)
 ie. _The repository 'http://archive.ubuntu.com/ubuntu kinetic Release' no longer has a Release file._ <br/>
 `sudo nano /etc/apt/sources.list` and add "old-", to the hyperlinks shown there. something like:  <br/>
 http://old-releases.ubuntu.com <br/>
 then save the file and do  `do-release-upgrade` this will revamp the next possible version and then run the progress
+<br/><br/>
+# Resolution 2 - (In case Resolution 1 Fails)  <br/>
+- Back up you main repo file `sudo cp /etc/apt/sources.list /etc/apt/sources.bak`  <br/>
+- findout what is the current version of Ubuntu Install `hostnamectl` then check in the ubuntu.com website what is the name codename  <br/>
+- Edit the same `sudo nano /etc/apt/sources.list`  <br/>
+- Replace the prior version with the new version: `^ \` in this example: `kinetic` for `lunar` (check every entry)  <br/>
+- ![image](https://github.com/ivanjrt/QuickLinuxCheatSheet/assets/44326428/717f7841-7816-4d2a-83e4-490208dbd481)  <br/>
+- `sudo apt update -y`
+- `sudo apt upgrade -y`
+- If prompted to configure libc6 to restart services. Tab over to “yes” and hit ENTER.
+- `sudo apt dist-upgrade -y`
+- You might get prompted to select your language twice
+- `sudo apt dist-upgrade -y`
+
+
+
+
+
+
 
