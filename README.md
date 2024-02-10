@@ -690,7 +690,9 @@ then save the file and do  `do-release-upgrade` this will revamp the next possib
 - `sudo apt dist-upgrade -y` <br/>
 - You might get prompted to select your language twice <br/>
 - `sudo apt dist-upgrade -y` <br/>
-
+- you might need to remove all libraries `'sudo apt autoremove` <br/>
+- `sudo reboot` <br/>
+- Enjoy! <br/>
 
 
 
