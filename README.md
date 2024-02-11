@@ -692,7 +692,10 @@ then save the file and do  `do-release-upgrade` this will revamp the next possib
 - `sudo apt dist-upgrade -y` <br/>
 - you might need to remove all libraries `'sudo apt autoremove` <br/>
 - `sudo reboot` <br/>
-- Enjoy! <br/>
+- check again and see if it is already upgraded `hostnamectl`
+- at this point the platform for that version now should be ready for the next `do-release-upgrade`
+- follow prompts.
+- Enjoy!
 
 
 
