@@ -694,8 +694,8 @@ then save the file and do  `do-release-upgrade` this will revamp the next possib
 - `sudo reboot` <br/>
 - check again and see if it is already upgraded `hostnamectl`
 - at this point the platform for that version now should be ready for the next `do-release-upgrade`
-- follow prompts.
-- Enjoy!
+- follow prompts., 🍵time and walk it off this part will take a while.
+- Enjoy! 😉
 
 
 
