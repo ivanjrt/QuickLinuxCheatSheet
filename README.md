@@ -685,12 +685,12 @@ then save the file and do  `do-release-upgrade` this will revamp the next possib
 - `sudo apt upgrade -y`
 - If prompted to configure libc6 to restart services. Tab over to “yes” and hit ENTER. <br/>
 - ![image](https://github.com/ivanjrt/QuickLinuxCheatSheet/assets/44326428/f6ea61b0-322d-4134-a252-b3dcb12fb11a) <br/>
-- Select all services (check with  your other apps as this will be restarted) <br/>
+- Select all services (check with  your other apps as this will be restarted, specially if this a PROD enviroment) <br/>
 
 - `sudo apt dist-upgrade -y` <br/>
 - You might get prompted to select your language twice <br/>
 - `sudo apt dist-upgrade -y` <br/>
-- you might need to remove all libraries `'sudo apt autoremove` <br/>
+- you might need to remove all libraries `sudo apt autoremove` <br/>
 - `sudo reboot` <br/>
 - check again and see if it is already upgraded `hostnamectl`
 - at this point the platform for that version now should be ready for the next `do-release-upgrade`
