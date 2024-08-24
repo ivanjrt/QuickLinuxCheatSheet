@@ -415,6 +415,36 @@ ls -lh file.txt
 ls -all folder
 ```
 <br/> 8 Permissions: r=Read ; w=Write ; x=Execute <br/>
+
+# Installing a Samba share
+``` 
+sudo apt install samba -y
+```
+Create a folder destined to do the SHARE , 👉**change your path** 
+```
+mkdir /home/USERNAME/Desktop/sambashare/
+```
+* Configure it `sudo nano /etc/samba/smb.conf` <BR/>
+At the end of the file add this, 👉 **_But make your required changes to your path_:** , then save it <BR/>
+```
+[sambashare]
+    comment = Samba on Ubuntu
+    path = /home/adam/Desktop/sambashare/
+    read only = no
+    browsable = yes
+```
+Restart and Allow the Firewall
+```
+sudo service smbd restart
+sudo ufw allow samba
+```
+Create the Username and then it will ask you to add a password for the SAMBA
+```
+sudo smbpasswd -a USER-NAME-GOESHERE
+```
+To connect to it, if Linux/Mac  `smb://ipaddress/sambashare` or Windows `\\ipaddress\sambashare`  <BR/>
+
+
  
 # Find file which sizes are between 5-10MB
 ```
